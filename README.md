@@ -28,9 +28,10 @@ Below is a side-by-side comparison example of the original and improved Repulsio
     RepBox_loss = non_zereos_elements.mean()  # time:0.00598731232
     return RepBox_loss
 ```
-# Recommended References and Acknowledgements
-[yolov5+Repulsion](https://blog.csdn.net/qq_42754919/article/details/132838705)
+# Usage
+Reference can be made to [yolov5+Repulsion](https://blog.csdn.net/qq_42754919/article/details/132838705)
 
+# Recommended References
 [repulsion_loss_ssd](https://github.com/bailvwangzi/repulsion_loss_ssd)
 
 [repulsion_loss_pytorch](https://github.com/dongdonghy/repulsion_loss_pytorch)
