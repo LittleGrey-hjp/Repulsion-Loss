@@ -18,7 +18,9 @@ Below is a side-by-side comparison example of the original and improved Repulsio
             else:
                 RepBox_loss += -(1 - overlaps[i][j]).clamp(min=self.eps).log().sum()
     RepBox_loss = RepBox_loss / count # time:10.72557178497
+```
 
+```python
 # Novel Repulsion Loss term RepBox Implementation
     Re_loss_tensor = torch.where(overlaps > self.sigma,
                                    (overlaps - self.sigma) / (1 - self.sigma) - math.log(1 - self.sigma),
